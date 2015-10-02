@@ -18,7 +18,7 @@ icon: glyphicon-heart
 
 * Email：[jnucaiyf@163.com](mailto:{{ site.email }})
 * Weibo：[Yuanfei_Tsai](http://www.weibo.com/p/1005052413354220/home?from=page_100505&mod=TAB#place)
-* GitHub:[caiyuanfei](https://github.com/caiyuanfei)
+* GitHub：[caiyuanfei](https://github.com/caiyuanfei)
 
 ---
 

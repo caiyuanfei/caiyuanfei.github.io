@@ -14,7 +14,7 @@ icon: glyphicon-heart
 
 ---
 
-### 联系我
+### 欢迎交流
 
 * Email：[jnucaiyf@163.com](mailto:{{ site.email }})
 * Weibo：[Yuanfei_Tsai](http://www.weibo.com/p/1005052413354220/home?from=page_100505&mod=TAB#place)

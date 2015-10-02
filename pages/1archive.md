@@ -2,7 +2,7 @@
 layout: page
 title: List
 permalink: /archive/
-icon: glyphicon-list
+icon: glyphicon-th-list
 ---
 
 {% for post in site.posts %}

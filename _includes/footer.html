@@ -2,7 +2,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-        <a href="mailto:{{ site.email }}" target="_blank"><span class="octicon octicon-mail"></span> {{ site.email }}</a>
+        <a href="mailto:{{ site.email }}" target="_blank"><span class="glyphicon glyphicon-envelope"></span> {{ site.email }}</a>
         <span class="point"> · </span>
         {% if site.github_username %}
           
@@ -17,11 +17,11 @@
           </a>
           
           {% endif %}
-          <span class="octicon octicon-rss"> · </span>
+          <span class="point"> · </span>
           <span><a href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS</a></span>
           <span class="point"> · </span>
           <span>{{ site.description }}</span>
-          <span class="word-keep"> · </span>
+          <span class="point"> · </span>
           <span>&copy; 2015 CaiYuanfei</span>
           <span class="point"> · </span>
           <span>Designed by <a href="https://github.com/caiyuanfei">Caiyf</a></span>

@@ -1,6 +1,7 @@
 ---
 layout: page
-title: archive
+title: Archive
+icon:glyphicon glyphicon-list-alt
 ---
 
 {% for post in site.posts %}

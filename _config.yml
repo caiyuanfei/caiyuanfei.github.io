@@ -13,6 +13,7 @@ description: 蔡远飞的博客 Whu
 github_username: caiyuanfei
 permalink: /:year/:month/:day/:title/
 paginate: 10
+paginate_path: "page:num"
 
 # Build settings
 markdown: kramdown

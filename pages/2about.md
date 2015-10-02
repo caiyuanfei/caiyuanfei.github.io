@@ -8,6 +8,7 @@ icon: glyphicon-heart
 ### 关于我
 
 > 在读数量经济学硕士研究生。
+
 本博主要用于督促自己学习并分享学习心得。
    
 
@@ -24,13 +25,14 @@ icon: glyphicon-heart
 ### 关于本站   
 
 >2015.10.02 放国庆长假,正好有时间，就把前期搭建的粗糙版个人博客简单修辞了一下。因本人未学过前端，搭建和配置博客主要是跟着网上资料的指引，然后凭借自己的编程基础对模板代码进行修改来配置本博。感谢本博参考到的资源。
+
 2015.09.15 执念已久，正好有机会建个github的个人独立博客，主要用于监督自己学习。
 
 ---
 
 #### 友情链接
 
-[羡辙杂俎](http://zhangwenli.com/blog) \| [Anotherhome](https://www.anotherhome.net) \| [Reverland](http://reverland.org/) \| [ZhiLi](http://lizhipower.github.io/) \| [Simmer](http://simmer-jun.github.io/) \| [awthink](http://awthink.net/) \| [Aralic](http://aralic.github.io/) \| [zchen9](http://www.chen9.info/) \| [wuhuaji](http://wuhuaji.me/) \| [lisheng](http://www.lishengcn.cn/) \| [马天翼](http://www.fkysly.com/)
+[统计之都](http://cos.name/)
 
 ---
 只要有干货或心得一定会不定时更新！

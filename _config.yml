@@ -27,10 +27,10 @@ paginate_path: ":num"
 
 baseurl: ""
 
-title: "RainyAlley"
-email: "dubuyuye@yeah.net"
-description: "Developer"
-github_username:  "dubuyuye"
+title: "蔡远飞"
+email: "995624442@qq.com"
+description: "Student"
+github_username:  "caiyuanfei"
 
 url: "http://blog.rainyalley.com"
 imgrepo: "http://blog.rainyalley.com/static/img"

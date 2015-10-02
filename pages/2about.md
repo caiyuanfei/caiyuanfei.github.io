@@ -7,7 +7,7 @@ icon: glyphicon-heart
 
 ### 关于我
 
-> 2015年我将步入找工作的大潮，希望做一个前端开发工程师。   
+> 2015年我将步入找工作的大潮，希望做一个前端开发工程师。 **[在线简历 Online CV](http://gaohaoyang.github.io/cv/)**
 
 在校硕士研究生一枚，就读于西安交通大学软件工程专业，2016年毕业。   
 
@@ -53,7 +53,7 @@ icon: glyphicon-heart
 
 #### 友情链接
 
-[羡辙杂俎](http://zhangwenli.com/blog) \| [Anotherhome](https://www.anotherhome.net) \| [Reverland](http://reverland.org/) \| [ZhiLi](http://lizhipower.github.io/) \| [Simmer](http://simmer-jun.github.io/) \| [awthink](http://awthink.net/) \| [Aralic](http://aralic.github.io/)
+[羡辙杂俎](http://zhangwenli.com/blog) \| [Anotherhome](https://www.anotherhome.net) \| [Reverland](http://reverland.org/) \| [ZhiLi](http://lizhipower.github.io/) \| [Simmer](http://simmer-jun.github.io/) \| [awthink](http://awthink.net/) \| [Aralic](http://aralic.github.io/) \| [zchen9](http://www.chen9.info/) \| [wuhuaji](http://wuhuaji.me/) \| [lisheng](http://www.lishengcn.cn/) \| [马天翼](http://www.fkysly.com/)
 
 Comment below to exchange link with me.  
 

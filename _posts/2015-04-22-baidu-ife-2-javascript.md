@@ -218,12 +218,30 @@ IE8,9不支持 `async`
 
 ### 值类型和引用类型的区别
 
-声明一个值类型变量，编译器会在栈上分配一个空间，这个空间对应着该值类型变量，空间里存储的就是该变量的值。引用类型的实例分配在堆上，新建一个引用类型实例，得到的变量值对应的是该实例的内存分配地址，这就像您的银行账号一样。
+* 值类型
+
+    声明一个值类型变量，编译器会在栈上分配一个空间，这个空间对应着该值类型变量，空间里存储的就是该变量的值。存储在栈（stack）中的简单数据段，也就是说，它们的值直接存储在变量访问的位置。
+
+* 引用类型
+
+    引用类型的实例分配在堆上，新建一个引用类型实例，得到的变量值对应的是该实例的内存分配地址，这就像您的银行账号一样。存储在堆（heap）中的对象，也就是说，存储在变量处的值是一个指针（point），指向存储对象的内存处。
+
+> 为变量赋值时，ECMAScript 的解释程序必须判断该值是原始类型，还是引用类型。要实现这一点，解释程序则需尝试判断该值是否为 ECMAScript 的原始类型之一，即 Undefined、Null、Boolean、Number 和 String 型。由于这些原始类型占据的空间是固定的，所以可将他们存储在较小的内存区域 - 栈中。这样存储便于迅速查寻变量的值。
+>
+> * **在许多语言中，字符串都被看作引用类型，而非原始类型，因为字符串的长度是可变的。ECMAScript 打破了这一传统。**
+>
+> 如果一个值是引用类型的，那么它的存储空间将从堆中分配。由于引用值的大小会改变，所以不能把它放在栈中，否则会降低变量查寻的速度。相反，放在变量的栈空间中的值是该对象存储在堆中的地址。地址的大小是固定的，所以把它存储在栈中对变量性能无任何负面影响。如下图所示：
+>
+> ![ct_js_value](http://www.w3school.com.cn/i/ct_js_value.gif)
 
 JavaScript中原始值包括：undefined，null，布尔值，数字和字符串。引用类型主要指对象（包括数组和函数）。
 
 >* 原始值是不可更改的。对象的值是可修改的。
 >* 原始值的比较是值的比较。对象的比较并非值的比较。对象的值都是引用，对象的比较均是引用的比较，当且仅当他们都引用同一个基对象时，他们才相等。
+
+**参考：**
+
+* [ECMAScript 原始值和引用值](http://www.w3school.com.cn/js/pro_js_value.asp)
 
 ---
 
@@ -294,7 +312,7 @@ console:
 
 * 创建对象
 
-创建对象的方式有三种：使用对象初始化器，使用构造函数，使用 `Object.create()` 方法。
+创建对象的方式有三种：对象直接量，关键字 `new`，使用 `Object.create()` 方法。
 
 `Object.create()` 方法创建一个拥有指定原型和若干个指定属性的对象。
 
@@ -348,7 +366,12 @@ console:
 
 **参考：**
 
-* [白话简单克隆和深度克隆](http://blog.csdn.net/java2000_net/article/details/3014934) 介绍什么是深度克隆，用羊圈和羊的图，简单深刻。
+* [白话简单克隆和深度克隆](http://blog.csdn.net/java2000_net/article/details/3014934) 介绍什么是深度克隆，用羊圈和羊的图，简单深刻。如下图：
+
+![简单克隆](http://p.blog.csdn.net/images/p_blog_csdn_net/java2000_net/EntryImages/20081004/%E7%AE%80%E5%8D%95%E5%85%8B%E9%9A%86.PNG)
+![深度克隆](http://p.blog.csdn.net/images/p_blog_csdn_net/java2000_net/EntryImages/20081004/%E6%B7%B1%E5%BA%A6%E5%85%8B%E9%9A%86.PNG)
+
+
 * [javascript克隆对象深度介绍](http://www.jb51.net/article/32015.htm) 这个代码写的太妙了，可惜找不到源地址了，都是转载来转载去的，要是你知道源地址，请留言告诉我。
 
 浅度克隆：基本类型为值传递，对象仍为引用传递。 
@@ -357,7 +380,7 @@ console:
 
 **思路：**深度克隆复制目标对象，那么就需要枚举这个对象。
 
-1. 判断当前属性是否是引用类型，如果是数组或者对象，创建响应类型变量。
+1. 判断当前属性是否是引用类型，如果是数组或者对象，创建相应类型变量。
 2. 枚举对象内所有属性。
 3. 使用 `hasOwnProperty()` 方法，排除继承的属性。
 4. 给新的对象相应位置赋值，若当前属性为引用类型（数组或对象）递归本方法。直到内部的值类型。
@@ -1026,7 +1049,7 @@ $   |匹配输入/字符串的结尾。如果多行（multiline）标志被设�
 
 IE8+ 支持 `addEventListener()`。IE8 以下的版本使用 `attachEvent()`。
 
-* `attachEvent()` 不支持时间捕获。
+* `attachEvent()` 不支持事件捕获。
 * `attachEvent()` 第一个参数事件处理程序属性名使用前缀 on。
 * `attachEvent()` 允许相同的事件处理程序函数注册多次。
 
@@ -1126,6 +1149,39 @@ enter 键的 keyCode 为 13。
     }
 
 * 参考自：JavaScript权威指南
+
+---
+
+### sessionStorage、localStorage 和 cookie 之间的区别
+
+* **共同点**
+
+    都是保存在浏览器端，且同源的。都是键值对存储。
+
+* **区别**
+
+    特性 | Cookie | localStorage | sessionStorage
+    -----|-------|--------------|---------
+    数据的声明周期 | 一般由服务器生成，可设置失效时间。如果在浏览器端生成Cookie，默认是关闭浏览器后失效 | 除非被清除，否则永久保存 | 仅在当前会话下有效，关闭页面或浏览器后被清除
+    存放数据大小 | 4K左右 | 一般为5MB | 同左
+    与服务器端通信 | 每次都会携带在HTTP头中，如果使用cookie保存过多数据会带来性能问题 | 仅在客户端（即浏览器）中保存，不参与和服务器的通信 | 同左
+    易用性 | 需要程序员自己封装，源生的Cookie接口不友好 | 源生接口可以接受，亦可再次封装来对Object和Array有更好的支持 | 同左
+
+* **应用场景**
+
+    每个 HTTP 请求都会带着 Cookie 信息，所以 Cookie 应当简单，比如判断用户是否登陆。
+
+    localStorage 接替 Cookie 管理购物车，同时也可以存储 HTML5 游戏的一些本地数据。
+
+    sessionStorage 在表单内容较多的时候，为了优化用户体验，按步骤分页引导填写，这时使用sessionStorage 就发挥了作用。
+    
+* **安全性**
+
+    cookie 中最好不要放置任何明文的东西。两个 storage的数据提交后在服务端一定要校验
+
+**参考：**
+
+* [详说 Cookie, LocalStorage 与 SessionStorage](http://jerryzou.com/posts/cookie-and-web-storage/)
 
 ---
 
@@ -1482,5 +1538,16 @@ var suggestData = ['Simon', 'Erik', 'Kener'];
 
 * [代码](https://github.com/Gaohaoyang/ife/tree/master/task/task0002/work/Gaohaoyang)
 * [在线 Demo](http://gaohaoyang.github.io/ife/task/task0002/work/Gaohaoyang/index.html)
+
+---
+
+## Update
+
+**2015/06/01**
+
+* [导师的参考答案](https://github.com/hushicai/ife-task0002)
+* [review](https://github.com/baidu-ife/ife/tree/master/task/task0002/review)
+
+---
 
 加油！向着下一个目标前进！

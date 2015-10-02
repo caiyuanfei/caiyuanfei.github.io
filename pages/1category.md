@@ -1,7 +1,8 @@
 ---
 layout: page
 title: Category
-icon:glyphicon glyphicon-th-list
+permalink: /category/
+icon: glyphicon-th-list
 ---
 <div class="page-category">
 {% for cat in site.categories %}

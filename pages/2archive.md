@@ -1,7 +1,8 @@
 ---
 layout: page
 title: Archive
-icon:glyphicon glyphicon-list-alt
+permalink: /archive/
+icon: glyphicon-list-alt
 ---
 
 {% for post in site.posts %}

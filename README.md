@@ -9,8 +9,3 @@ You can visit [here](http://caiyuanfei.github.io/) to see this blog.
 **博客访问地址：[点击这里](http://caiyuanfei.github.io/)**
 
 关于Blog模板：模板来自[GitHub](https://github.com/Gaohaoyang/gaohaoyang.github.io)
-
-[^LaTex]
-$$E=MC^2$$
-
-

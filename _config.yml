@@ -6,14 +6,14 @@
 title: Cai's blog
 subtitle: Stay hungry, stay foolish
 description: 
-author: cai
+author: Cai
 language: zh-Hans
-email: 2368509854@qq.com
+email: 995624442@qq.com
 timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://ccc013.github.io/
+url: http://caiyuanfei.github.io
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -51,10 +51,10 @@ tag_map:
 
 # Social links
 social:
-  Github: https://github.com/ccc013
-  Weibo: http://weibo.com/u/2181051220?is_all=1
-  Zhihu: https://www.zhihu.com/people/luo-cai
-  CSDN: http://blog.csdn.net/lc013?viewmode=contents
+  Github: https://caiyuanfei.github.io
+#  Weibo: http://weibo.com/u/2181051220?is_all=1
+#  Zhihu: https://www.zhihu.com/people/luo-cai
+# CSDN: http://blog.csdn.net/lc013?viewmode=contents
 
 # Creative Commons 4.0 International License.
 # http://creativecommons.org/
@@ -76,7 +76,7 @@ time_format: HH:mm:ss
 
 # Pagination
 ## Set per_page to 0 to disable pagination
-per_page: 5
+per_page: 6
 pagination_dir: page
 
 # Extensions
@@ -91,5 +91,5 @@ Plugins:
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: git@github.com:ccc013/ccc013.github.io.git
+  repo: git@github.com:caiyuanfei/caiyuanfei.github.io.git
   branch: master

@@ -2,7 +2,7 @@
 title: Cai Blog
 SEOTitle: 蔡远飞的博客 | Cai Blog
 header-img: img/home-bg.jpg
-email: 2368509854@qq.com
+email: 995624442@qq.com
 description: "关于数据科学 | 这里是 @Cai 的个人博客，与你一起发现更大的世界。"
 keyword: "Cai, Cai远飞, 远飞, caiyuanfei, huxpro, @huxpro, 远飞的博客, Cai Blog, 博客, 个人网站, 金融, 数据科学, 产品"
 url: "http://caiyuanfei.github.io/"              # your host, for absolute URL
@@ -46,7 +46,6 @@ kramdown:
   input: GFM                            # use Github Flavored Markdown !important
 
 
-
 # Disqus settings
 #disqus_username: _your_disqus_short_name_
 
@@ -54,8 +53,6 @@ kramdown:
 duoshuo_username: huxblog
 # Share component is depend on Comment so we can NOT use share only.
 duoshuo_share: true                     # set to false if you want to use Comment without Sharing
-
-
 
 
 # Analytics settings
@@ -67,12 +64,10 @@ ga_track_id: 'UA-49627206-1'            # Format: UA-xxxxxx-xx
 ga_domain: huangxuan.me
 
 
-
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
 sidebar-about-description: "推公式，建模型，敲代码，跑数据，<br>离开世界之前，一切都是过程"
 sidebar-avatar: /img/avatar-hux.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
-
 
 
 # Featured Tags
@@ -80,11 +75,9 @@ featured-tags: true                     # whether or not using Feature-Tags
 featured-condition-size: 1              # A tag will be featured if the size of it is more than this condition value
 
 
-
 # Progressive Web Apps
 chrome-tab-theme-color: "#000000"
 service-worker: true
-
 
 
 # Friends

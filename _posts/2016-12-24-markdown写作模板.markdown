@@ -29,6 +29,20 @@ tags:
 ###### 六级标题
 正文
 
+
+# 文件头设置
+layout:     post
+title:      "标题"
+subtitle:   "副标题"
+date:       2016-12-24（日期）
+author:     "作者"
+header-img: "img/post-bg-ios9-web.jpg"（标题栏背景图——绝对地址）
+catalog:    true or false（是否需要目录，不需要时可直接删掉本行）
+tags: （tags)
+    - markdown
+    - 写作
+
+
 # 字体
 **粗体**
 *斜体*

@@ -12,7 +12,7 @@ baseurl: ""                             # for example, '/blog' if your blog host
 
 # SNS settings
 RSS: false
-weibo_username:     Yuanfei_Tsai
+weibo_username:     u/2413354220?is_all=1
 # zhihu_username:     huxpro
 github_username:    caiyuanfei
 #twitter_username:  huxpro
@@ -50,7 +50,7 @@ kramdown:
 #disqus_username: _your_disqus_short_name_
 
 # Duoshuo settings
-duoshuo_username: huxblog
+duoshuo_username: Yuanfei_Tsai
 # Share component is depend on Comment so we can NOT use share only.
 duoshuo_share: true                     # set to false if you want to use Comment without Sharing
 
@@ -60,13 +60,13 @@ duoshuo_share: true                     # set to false if you want to use Commen
 # ba_track_id: [your track id]
 
 # Google Analytics
-ga_track_id: 'UA-49627206-1'            # Format: UA-xxxxxx-xx
-ga_domain: huangxuan.me
+# ga_track_id: 'UA-49627206-1'            # Format: UA-xxxxxx-xx
+# ga_domain: huangxuan.me
 
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "推公式，建模型，敲代码，跑数据，<br>离开世界之前，一切都是过程"
+sidebar-about-description: "推公式，建模型，敲代码，<br>跑数据，做投资，吹吹水。"
 sidebar-avatar: /img/avatar-hux.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
@@ -83,13 +83,10 @@ service-worker: true
 # Friends
 friends: [
     {
-        title: "Su",
-        href: "http://su.gallery/"
+        title: "统计之都",
+        href: "http://cos.name/"
     },{
-        title: "乱序",
-        href: "http://mida.re/"
-    },{
-        title: "前端外刊评论",
-        href: "http://qianduan.guru/"
+        title: "人大经济论坛",
+        href: "http://bbs.pinggu.org/"
     }
 ]

@@ -32,6 +32,7 @@ tags:
 ### 获取股票数据
 
 先加载pandas模块。
+
 ```python
 from pandas import Series, DataFrame
 import pandas as pd
@@ -44,18 +45,22 @@ import pandas as pd
 ###### 读取CSV数据
 
 这里只以读取CSV格式的上证综指数据为例，其他格式类似。
+
 ```Python
 path = 'D:\GitHub\python-for-finance'
 print(path + '/szzz.csv')
 szzz = pd.read_csv(path + '/szzz.csv', index_col = 0)
 print(szzz.head())
 ```
+
 结果就是读出来啦。数据包括了上证综指开盘价、最高价、最低价、收盘价和成交量。只显示前面五行。
+
 ![img](/img/in-post/past_py_fin/read_csv.jpg)
 
 ###### 从Yahoo、Google等网站直接读取
 
 pandas（Python2.X）/pandas_datareader（Python3.5）可通过API直接获取yahoo财经，Google 财经，world bank等数据接口提供的股票数据。前段时间万科在风口，那这里就以从yahoo财经的股票数据接口获取万科A股票数据为例吧。
+
 ```Python
 import pandas as pd
 import pandas_datareader.data as web #python3.5
@@ -64,6 +69,7 @@ start = datetime.datetime(2010, 1, 1) #数据读取开始日期
 end = datetime.date.today() #数据读取结束日期
 vanke = web.DataReader("000002.SZ", 'yahoo', start, end)
 ```
+
 就是如此简单，获得了2010-1-1至今天（2016-12-27日）的万科A股票开盘价、最高价、最低价、收盘价、成交量、调整后收盘价等股本数据。
 
 >注意：000002.SZ表示在深市上市的万科A，其中000002为股票代码，SZ表示上市所在交易所代码，在深市上市的股票加SZ，在沪市上市的股票加SS，即股票代码加沪深SS或SZ。
@@ -77,6 +83,7 @@ print(len(vanke))
 print(vanke.head())
 print(vanke.tail())
 ```
+
 ![img](/img/in-post/past_py_fin/yahoo_data.jpg)
 
 

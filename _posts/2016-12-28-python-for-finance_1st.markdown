@@ -55,7 +55,7 @@ print(szzz.head())
 
 结果就是读出来啦。数据包括了上证综指开盘价、最高价、最低价、收盘价和成交量。只显示前面五行。
 
-![img](/img/in-post/past_py_fin/read_csv.jpg)
+![img](/img/in-post/past_py_fin/read_csv.JPG)
 
 ###### 从Yahoo、Google等网站直接读取
 
@@ -84,7 +84,7 @@ print(vanke.head())
 print(vanke.tail())
 ```
 
-![img](/img/in-post/past_py_fin/yahoo_data.jpg)
+![img](/img/in-post/past_py_fin/yahoo_data.JPG)
 
 
 **参考文献**
